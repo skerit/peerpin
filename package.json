@@ -7,9 +7,10 @@
 	"repository": "git@github.com:skerit/peerpin.git",
 	"license": "MIT",
 	"dependencies": {
-		"datland-swarm-defaults": "~1.0.2",
-		"discovery-swarm": "~4.4.2",
-		"socket-wrapper": "~1.0.0",
-		"protoblast": "~0.5.1"
+		"chainful"               : "~0.2.0",
+		"datland-swarm-defaults" : "~1.0.2",
+		"discovery-swarm"        : "~4.4.2",
+		"protoblast"             : "~0.5.1",
+		"socket-wrapper"         : "~1.0.0"
 	}
 }
