@@ -12,5 +12,19 @@
 		"discovery-swarm"        : "~4.4.2",
 		"protoblast"             : "~0.5.1",
 		"socket-wrapper"         : "~1.0.0"
+	},
+	"devDependencies" : {
+		"coveralls"   : "^2.11.6",
+		"istanbul"    : "^0.4.5",
+		"mocha"       : "1.20.x",
+		"tmp"         : "~0.0.33"
+	},
+	"scripts": {
+		"test"            : "node_modules/.bin/mocha --reporter spec",
+		"coverage"        : "./node_modules/istanbul/lib/cli.js cover _mocha",
+		"report-coverage" : "cat ./coverage/lcov.info | coveralls"
+	},
+	"engines": {
+		"node": ">=5"
 	}
 }
