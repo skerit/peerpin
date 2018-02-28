@@ -6,6 +6,7 @@ var libpath = require('path'),
     tmp     = require('tmp'),
     fs      = require('fs'),
     peerpin_from_ns,
+    temp_dir_two,
     private_key,
     public_key,
     ChainfulNS,
@@ -27,6 +28,7 @@ tmp.setGracefulCleanup();
 
 // Get a temp dir
 temp_dir = tmp.dirSync({unsafeCleanup: true});
+temp_dir_two = tmp.dirSync({unsafeCleanup: true});
 
 describe('Peerpin', function() {
 
@@ -169,10 +171,17 @@ describe('Peer', function() {
 	this.slow(3000);
 	this.timeout(20000);
 
-	before(function() {
+	before(function(done) {
 		second_connection = new PeerpinNS.Peerpin('peerpin-test');
 		second_identity = new PeerpinNS.Identity(second_connection);
 		second_identity.createKeys();
+
+		second_connection.setMainStorageDir(temp_dir_two.name, function _done(err) {
+			if (err) {
+				throw err;
+			}
+			done();
+		});
 	});
 
 	describe('Identity `peer` event', function() {
@@ -198,6 +207,20 @@ describe('Peer', function() {
 			test_peer.afterOnce('verified', function() {
 				done();
 			});
+		});
+	});
+
+	describe('initial chain state request', function() {
+		it('should request the chain state', function(done) {
+			test_peer.afterOnce('chain_state_response', function() {
+				done();
+			});
+		})
+	});
+
+	describe('#talk(type, data, callback)', function() {
+		it('should allow communication between two peers', function(done) {
+			done();
 		});
 	});
 });
