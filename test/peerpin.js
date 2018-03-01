@@ -5,6 +5,7 @@ var libpath = require('path'),
     crypto  = require('crypto'),
     tmp     = require('tmp'),
     fs      = require('fs'),
+    test_network_name = 'peerpin-test-' + Date.now(),
     peerpin_from_ns,
     temp_dir_two,
     private_key,
@@ -46,8 +47,8 @@ describe('Peerpin', function() {
 		assert.equal(PeerpinNS.name, 'Peerpin', 'Namespace name does not match');
 
 		// The namespace should be a link to the main class
-		peerpin_from_ns = new PeerpinNS('peerpin-test');
-		peerpin = new PeerpinNS.Peerpin('peerpin-test');
+		peerpin_from_ns = new PeerpinNS(test_network_name);
+		peerpin = new PeerpinNS.Peerpin(test_network_name);
 
 		// These 2 should have the same constructor
 		assert.equal(peerpin_from_ns.constructor, peerpin.constructor, 'The namespace does not return the correct constructor');
@@ -57,7 +58,7 @@ describe('Peerpin', function() {
 		assert.equal(typeof PeerpinNS.Identity, 'function');
 
 		// Create a new network
-		main = new PeerpinNS.Peerpin('peerpin-test');
+		main = new PeerpinNS.Peerpin(test_network_name);
 	});
 
 	describe('#setMainStorageDir(path, callback)', function() {
@@ -172,7 +173,7 @@ describe('Peer', function() {
 	this.timeout(20000);
 
 	before(function(done) {
-		second_connection = new PeerpinNS.Peerpin('peerpin-test');
+		second_connection = new PeerpinNS.Peerpin(test_network_name);
 		second_identity = new PeerpinNS.Identity(second_connection);
 		second_identity.createKeys();
 
