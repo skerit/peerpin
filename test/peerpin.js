@@ -143,7 +143,7 @@ describe('Identity', function() {
 		    test_value = 'test_value_' + Date.now();
 
 		it('should claim a value on the network', function(done) {
-			identity.claimValue(test_name, test_value, function claimed(err, result) {
+			identity.claimValue(true, test_name, test_value, function claimed(err, result) {
 
 				if (err) {
 					throw err;
@@ -154,7 +154,7 @@ describe('Identity', function() {
 		});
 
 		it('should throw an error when the value already exists', function(done) {
-			identity.claimValue(test_name, test_value, function claimed(err, result) {
+			identity.claimValue(true, test_name, test_value, function claimed(err, result) {
 				assert.equal(!!err, true);
 				done();
 			});
@@ -168,7 +168,7 @@ describe('Peer', function() {
 	    second_identity,
 	    test_peer;
 
-	this.slow(3000);
+	this.slow(4000);
 	this.timeout(20000);
 
 	before(function(done) {
