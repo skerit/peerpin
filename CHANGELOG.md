@@ -4,6 +4,7 @@
 * Add `Identity#connecting_peer_count` property
 * Add `Peerpin#number_of_connection_attempts` property
 * Allow connecting using a preferred port
+* Emit the `incoming_connection` event on the `Identity` class for possible incoming connections
 
 ## 0.1.0 (2018-03-11)
 
