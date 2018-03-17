@@ -1,13 +1,13 @@
 {
 	"name": "peerpin",
 	"description": "A serverless network",
-	"version": "0.1.2-alpha",
+	"version": "0.1.2",
 	"author": "Jelle De Loecker <jelle@develry.be>",
 	"keywords": ["swarm", "p2p"],
 	"repository": "git@github.com:skerit/peerpin.git",
 	"license": "MIT",
 	"dependencies": {
-		"chainful"               : "~0.2.0",
+		"chainful"               : "~0.2.2",
 		"datland-swarm-defaults" : "~1.0.2",
 		"discovery-swarm"        : "~4.4.2",
 		"protoblast"             : "~0.5.4"
