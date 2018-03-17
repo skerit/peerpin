@@ -1,6 +1,7 @@
 ## 0.1.2 (WIP)
 
 * Don't create root map "c:\"
+* Emit added blocks on the `Blockchain` instance
 
 ## 0.1.1 (2018-03-15)
 
