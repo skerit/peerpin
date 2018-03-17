@@ -1,3 +1,7 @@
+## 0.1.3 (WIP)
+
+* Fix getting ip address when no host info is available
+
 ## 0.1.2 (2018-03-17)
 
 * Don't create root map "c:\"
