@@ -1,3 +1,7 @@
+## 0.1.2 (WIP)
+
+* Don't create root map "c:\"
+
 ## 0.1.1 (2018-03-15)
 
 * Add information about our ip & port
