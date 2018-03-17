@@ -3,6 +3,7 @@
 * Don't create root map "c:\"
 * Emit added blocks on the `Blockchain` instance
 * Add optional hole-punching code
+* Add ability to save settings per identity
 
 ## 0.1.1 (2018-03-15)
 
