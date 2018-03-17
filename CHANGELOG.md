@@ -7,6 +7,7 @@
 * Add prefixes to `SocketWrapper` buffers
 * Throw an error when trying to compute a secret on an empty buffers
 * Ignore connections coming from ourselves
+* Wait for the `ready` event before letting an `Identity` connect
 
 ## 0.1.1 (2018-03-15)
 
