@@ -4,6 +4,7 @@
 * Emit added blocks on the `Blockchain` instance
 * Add optional hole-punching code
 * Add ability to save settings per identity
+* Add prefixes to `SocketWrapper` buffers
 
 ## 0.1.1 (2018-03-15)
 
