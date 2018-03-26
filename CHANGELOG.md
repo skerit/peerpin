@@ -1,4 +1,4 @@
-## 0.1.3 (WIP)
+## 0.1.3 (2018-03-26)
 
 * Fix getting ip address when no host info is available
 
