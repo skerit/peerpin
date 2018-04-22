@@ -1,3 +1,7 @@
+## 0.1.4 (WIP)
+
+* Bump `discovery-swarm` to v5.1.1 for lots of important fixes
+
 ## 0.1.3 (2018-03-26)
 
 * Fix getting ip address when no host info is available
