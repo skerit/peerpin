@@ -1,7 +1,7 @@
 {
 	"name": "peerpin",
 	"description": "A serverless network",
-	"version": "0.1.4-alpha",
+	"version": "0.1.4",
 	"author": "Jelle De Loecker <jelle@develry.be>",
 	"keywords": ["swarm", "p2p"],
 	"repository": "git@github.com:skerit/peerpin.git",

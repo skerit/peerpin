@@ -1,4 +1,4 @@
-## 0.1.4 (WIP)
+## 0.1.4 (2018-04-22)
 
 * Bump `discovery-swarm` to v5.1.1 for lots of important fixes
 
