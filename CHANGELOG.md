@@ -1,9 +1,12 @@
+## 0.1.5 (WIP)
+
+* Switch from deprected `datland-swarm-defaults` to `dat-swarm-defaults`
+* Bump `protoblast`, `raw-socket` & `discovery-swarm` versions
+* Add `test/example.js` script
+
 ## 0.1.4 (2018-04-22)
 
-* Bump `discovery-swarm` to v5.1.3 for lots of important fixes
-* Switch from deprected `datland-swarm-defaults` to `dat-swarm-defaults`
-* Bump `protoblast` and `raw-socket` version
-* Add `test/example.js` script
+* Bump `discovery-swarm` to v5.1.1 for lots of important fixes
 
 ## 0.1.3 (2018-03-26)
 
