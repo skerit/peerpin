@@ -60,6 +60,16 @@ Create your own decentralized network
 npm install peerpin
 ```
 
+## Example
+
+There is an example script at `test/example.js`, you'll need to run it like this on 2 machines (or the same machine):
+
+```
+node test/example.js name-of-my-test-network
+```
+
+And then the 2 instances should exchange a few messages
+
 ## Contributing
 Contributions are REALLY welcome.
 Please check the [contributing guidelines](.github/contributing.md) for more details. Thanks!
